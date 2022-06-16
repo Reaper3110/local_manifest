@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	
+     <remote name="idey"
+          fetch="https://github.com/IshanDeyA12" />
+
+     <remote name="drk" 
+          fetch="https://github.com/drkphnx" />
+
+     <remote name="los" 
+          fetch="https://github.com/LineageOS" />
+
+      <remote name="Emanuel"
+          fetch="https://github.com/EmanuelCN" />
+      
+       <remote name="pp"
+          fetch="https://github.com/PixelPlusUI-Devices" />
+	
+       <remote name="kd"
+          fetch="https://github.com/kdrag0n" />
+
+
+
+    <!-- Trees -->
+
+  <project path="device/xiaomi/alioth" name="device_xiaomi_alioth_drk" remote="idey" revision="12.1" />
+  <project path="device/xiaomi/sm8250-common" name="device_xiaomi_sm8250-common" remote="idey" revision="12.1" />
+  <project path="vendor/xiaomi" name="vendor_xiaomi" remote="drk" revision="12.1" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="idey" revision="snowcone-12.1" />
+  <project path="kernel/xiaomi/alioth" name="kernel_xiaomi_alioth" remote="idey" revision="staging3" />
+  <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="idey" revision="snowcone" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_audio"/>
+  <project path="hardware/qcom-caf/sm8250/audio" name="alioth_hardware_qcom-caf_sm8250_audio" remote="pp" revision="snowcone"/>
+  
+  <remove-project name="LineageOS/android_hardware_qcom_media"/>
+  <project path="hardware/qcom-caf/sm8250/media" name="alioth_hardware_qcom-caf_sm8250_media" remote="pp" revision="snowcone"/>
+
+  <remove-project name="LineageOS/android_hardware_qcom_display"/>
+  <project path="hardware/qcom-caf/sm8250/display" name="alioth_hardware_qcom-caf_sm8250_display" remote="pp" revision="snowcone"/>
+	
+   <!-- Toolchain -->
+   
+  <project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="kd" revision="master" clone-depth="1" />
+ 
+	
+</manifest>
